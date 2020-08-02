@@ -1,5 +1,4 @@
 module "aws_mod_account" {
-    source = "./modules/account"
-    account_name = var.account_name
-    email_address = var.email_address
+  source       = "./modules/account"
+  account_type = var.account_type[0]
 }
